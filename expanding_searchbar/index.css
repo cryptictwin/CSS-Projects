@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: bisque;
+}
+
+.container {
+    width: 60%; 
+    margin: auto;
+    padding-top: 5em;
+    overflow-wrap: normal;
+}
+
+.label {
+    display: block;
+}
+
+.search-bar {
+    width: 33%;
+    height: 30px;
+    border: 2px solid gray;
+    transition: all 0.3s;
+    font-size: 20px;
+    box-sizing: content-box;
+    padding-left: 5px;
+}
+
+
+.search-bar:focus {
+    width: 100%;
+    border: 2px solid rgb(151, 151, 245);
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-bar:focus::placeholder {
+    color: transparent;
+}
+
+.search-bar::placeholder {
+    opacity: calc(0.7);
+    transition: all 0.2s;
+}
