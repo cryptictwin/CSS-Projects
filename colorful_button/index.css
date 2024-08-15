@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(56, 17, 17);
+}
+
+.button-border {
+    background: linear-gradient(115deg, red, green, blue);
+    padding: 3px;
+}
+
+.button {
+    background-color: black;
+    color: rgb(171, 171, 171);
+    padding: 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+}
+
+.button-border:hover {
+    background: linear-gradient(230deg, red, green, blue);
+}
+
+.button:hover {
+    padding: 25px;
+    color: white;
+}
+
+.button, .button-border {
+    transition: all 0.2s;
+}
