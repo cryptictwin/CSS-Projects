@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.loading {
+    display: flex;
+    position: absolute;
+    height: max-content;
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0px;
+}
+
+@keyframes load {
+    from {
+        background-color: gray;
+        scale: 1;
+    }
+    to {
+        background-color: lightgrey;
+        scale: 1.2;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes bounce {
+    0%, 30% {
+        border-radius: 25px 25px 15px 15px;
+    }
+    30%, 100% {
+        border-radius: 25px;
+    }
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: darkslategray;
+    border-radius: 25px;
+    animation: load 0.7s infinite alternate , bounce 0.7s infinite alternate;
+}
+
+.line {
+    width: 100%;
+    min-height: 0px;
+    height: 2px;
+    background-color: black;
+    align-self: center;
+}
+
+.two {
+    animation-name: load, bounce;
+    animation-delay: 150ms;
+}
+
+.three {
+    animation-name: load, bounce;
+    animation-delay: 300ms;
+}
