@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.3em;
+    font-family: "Open Sans";
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: max-content;
+}
+
+p {
+    line-height: 1em;
+    margin-top: -3px;
+}
+.carousel {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px 15px 20px;
+}
+
+.carousel::after {
+    content: "";
+    animation: cycle 5s infinite;
+}
+
+@keyframes cycle {
+    0% {
+        content: "music";
+    }
+    25% {
+        content: "gaming";
+    }
+    50% {
+        content: "coding";
+    }
+    75% {
+        content: "bethany";
+    }
+    100% {
+        content: "music";
+    }
+}
