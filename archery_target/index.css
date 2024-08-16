@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.black {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-63%, -63%);
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 50px;
+    border: 1px solid transparent; /* Creates seperation which avoids collapsing margins */
+}
+
+.yellow {
+    width: 75px;
+    height: 75px;
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
