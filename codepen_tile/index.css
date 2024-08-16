@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
+    z-index: 10;
 }
 
 .card-avatar img {
@@ -42,13 +43,18 @@ body {
     font-size: 0.9em;
 }
 
+.card-stats {
+    position: absolute;
+    z-index: 11;
+    transition: all 0.2s;
+}
 
 ul li {
     list-style-type: none;
-    display: none;
+    display: inline-block;
     color: white;
     background-color: black;
-    padding: 5px;
+    padding: 2px 5px;
     border-radius: 5px;
     opacity: calc(0);
     transition: all 0.2s;
@@ -56,9 +62,15 @@ ul li {
 
 .card:hover {
     transform: scale(1.05);
+    padding-bottom: 60px;
 }
 
 .card:hover ul li{
     display: inline-block;
     opacity: calc(1);
+}
+
+.card:hover .card-stats {
+    position: fixed;
+    margin-top: 15px;
 }
