@@ -1,0 +1,26 @@
+body {
+    background-color: bisque;
+}
+
+.flag {
+    display: flex;
+    width: 225px;
+    height: 150px;
+    margin: 400px auto;
+}
+
+.stripe {
+    flex-grow: 1;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
